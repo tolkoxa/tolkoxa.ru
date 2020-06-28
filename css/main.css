@@ -131,7 +131,7 @@
     border-bottom: 2px dashed #adadad; }
 
 .footnote {
-  margin: 120px 0 0 0;
+  margin: 100px 0 0 0;
   padding: 0 0 0 0;
   font-size: 10px;
   font-family: "Noto Serif", serif;
@@ -211,7 +211,7 @@
   .quote {
     font-size: 25px;
     line-height: 30px;
-    margin: 0 0 20px 0; }
+    margin: 10px 0 20px 0; }
 
   .laquo {
     position: relative; }
@@ -242,9 +242,10 @@
   .input {
     height: 60px;
     padding: 0 5px 0 5px;
-    border-radius: 10px; }
+    border-radius: 10px;
+    font-size: 15px; }
     .input::placeholder {
-      font-size: 20px; }
+      font-size: 15px; }
 
   .btn {
     margin: 60px 0 0 0;
@@ -262,4 +263,7 @@
     padding: 0 0 0 0; }
     .text-link:active {
       color: #adadad;
-      border-bottom: 3px dashed #adadad; } }
+      border-bottom: 3px dashed #adadad; }
+
+  .footnote {
+    margin: 80px 0 0 0; } }
