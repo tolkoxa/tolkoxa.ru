@@ -4,6 +4,9 @@
   padding: 0 0 0 0;
   box-sizing: border-box; }
 
+body {
+  font-size: 16px; }
+
 .container {
   max-width: 100%;
   height: 100vh;
@@ -11,7 +14,10 @@
   justify-content: center;
   align-items: center; }
 
-.bg_white {
+.bg_main {
+  background-color: #ffe002; }
+
+.bg_second {
   background-color: #fff; }
 
 .bg_black {
@@ -19,15 +25,15 @@
 
 .container-inside {
   width: 70%;
-  margin: 0 auto;
+  margin: 2em auto;
   padding: 0; }
 
 .quote {
   font-family: "Noto Serif", serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 45px;
-  line-height: 61px;
+  font-size: 2.8em;
+  line-height: 3.8em;
   color: #000;
   margin: 0 0 50px 0;
   padding: 0 0 0 0; }
@@ -44,17 +50,18 @@
   font-family: "Noto Serif", serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 30px;
-  line-height: 45px;
+  font-size: 1.8em;
+  line-height: 2.8;
   color: #000;
   position: relative; }
   .author::before {
     content: '–';
-    font-size: 20px;
+    font-size: 1.5em;
     font-weight: 500;
     position: absolute;
     top: -15px;
     left: 232px;
+    color: #000;
     transform: rotate(123deg);
     -moz-transform: rotate(123deg);
     -ms-transform: rotate(123deg);
@@ -65,8 +72,8 @@
   font-family: "Noto Serif", serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 30px;
-  line-height: 50px; }
+  font-size: 1.8em;
+  line-height: 3.1em; }
   .text:last-child {
     padding: 0px; }
 
@@ -81,18 +88,18 @@
   color: #fff; }
 
 .input {
-  width: 100%;
-  height: 120px;
+  width: 100vh;
+  height: 16vh;
   margin: 0 0 0 0;
   padding: 0 20px 0 20px;
   border-radius: 25px;
   border: 4px solid #adadad;
-  color: #000;
-  font-size: 40px;
+  color: #ffe002;
+  font-size: 2.5em;
   outline: none; }
   .input::placeholder {
     color: #adadad;
-    font-size: 40px; }
+    font-size: 2.5em; }
   .input:focus {
     border-color: #000; }
 
@@ -103,15 +110,15 @@
 .btn {
   margin: 100px 0 0 0;
   padding: 0 0 0 0;
-  width: 350px;
-  height: 100px;
-  background: #000;
-  border-radius: 30px;
+  width: 21.8em;
+  height: 6.25em;
+  background: #ffe002;
+  border-radius: 1.8em;
   font-family: "Noto Serif", serif;
   font-weight: 400;
-  font-size: 35px;
-  line-height: 35px;
-  color: #fff;
+  font-size: 2.18em;
+  line-height: 2.18em;
+  color: #000;
   outline: none; }
   .btn:hover {
     cursor: pointer;
@@ -127,8 +134,8 @@
   padding-bottom: 2px;
   border-bottom: 2px solid #fff; }
   .text-link:hover {
-    color: #adadad;
-    border-bottom: 2px dashed #adadad; }
+    color: #ffe002;
+    border-bottom: 2px dashed #ffe002; }
 
 .footnote {
   margin: 100px 0 0 0;
@@ -139,20 +146,28 @@
   color: #adadad; }
 
 @media only screen and (min-width: 900px) and (max-width: 1100px) {
+  body {
+    font-size: 15px; }
+
+  .text {
+    line-height: 1.8em; }
+
   .container-inside {
     width: 85%; }
 
   .quote {
-    font-size: 40px;
-    line-height: 40px;
     margin: 0 0 40px 0; } }
 @media only screen and (min-width: 500px) and (max-width: 899px) {
+  body {
+    font-size: 14px; }
+
+  .text {
+    line-height: 1.8em; }
+
   .container-inside {
     width: 85%; }
 
   .quote {
-    font-size: 35px;
-    line-height: 40px;
     margin: 0 0 30px 0; }
 
   .laquo {
@@ -164,37 +179,21 @@
       left: -17px; }
 
   .author {
-    font-size: 25px;
-    line-height: 25px;
     position: relative; }
     .author::before {
       content: '–';
-      font-size: 15px;
       font-weight: 500;
       position: absolute;
       top: -10px;
       left: 193px; }
 
-  .text {
-    font-size: 20px;
-    line-height: 20px; }
-
   .input {
-    width: 100%;
-    height: 60px;
     padding: 0 5px 0 5px;
-    border-radius: 10px;
-    font-size: 25px; }
-    .input::placeholder {
-      font-size: 25px; }
+    border-radius: 10px; }
 
   .btn {
     margin: 60px 0 0 0;
-    width: 100%;
-    height: 60px;
-    border-radius: 20px;
-    font-size: 25px;
-    line-height: 15px; }
+    border-radius: 20px; }
     .btn:active {
       outline: none; }
 
@@ -205,12 +204,21 @@
       color: #adadad;
       border-bottom: 3px dashed #adadad; } }
 @media only screen and (max-width: 499px) {
+  body {
+    font-size: 12px; }
+
+  .text {
+    font-size: 1.8em;
+    line-height: 1.8em; }
+
+  .quote {
+    font-size: 1.8em;
+    line-height: 1.8em; }
+
   .container-inside {
     width: 90%; }
 
   .quote {
-    font-size: 25px;
-    line-height: 30px;
     margin: 10px 0 20px 0; }
 
   .laquo {
@@ -222,38 +230,24 @@
       left: -12px; }
 
   .author {
-    font-size: 20px;
-    line-height: 25px;
     position: relative; }
     .author::before {
       content: '–';
-      font-size: 15px;
       font-weight: 500;
       position: absolute;
       top: -10px;
       left: 155px; }
 
-  .text {
-    font-size: 15px;
-    line-height: 20px; }
-    .text:last-child {
-      padding: 0px; }
+  .text:last-child {
+    padding: 0px; }
 
   .input {
-    height: 60px;
     padding: 0 5px 0 5px;
-    border-radius: 10px;
-    font-size: 15px; }
-    .input::placeholder {
-      font-size: 15px; }
+    border-radius: 10px; }
 
   .btn {
     margin: 60px 0 0 0;
-    width: 100%;
-    height: 60px;
     border-radius: 10px;
-    font-size: 25px;
-    line-height: 15px;
     outline: none; }
     .btn:active {
       outline: none; }
@@ -267,3 +261,12 @@
 
   .footnote {
     margin: 80px 0 0 0; } }
+@media only screen and (orientation: landscape) and (max-width: 1200px) {
+  .container {
+    height: 100%; }
+
+  .first-screen {
+    height: 100vh; }
+
+  .text {
+    line-height: 1.8em; } }
