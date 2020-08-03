@@ -50,6 +50,7 @@ body {
     left: -12px; }
 
 .author {
+  width: 50px;
   font-family: "Noto Serif", serif;
   font-style: normal;
   font-weight: 400;
@@ -75,14 +76,21 @@ body {
   font-family: "Noto Serif", serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 1.28rem;
+  font-size: 1.19rem;
   line-height: 1.25; }
   .text:last-child {
     padding: 0px; }
 
+.text-form {
+  font-family: "Noto Serif", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.25; }
+
 .text_marpad {
-  margin: 0 0 0 0;
-  padding: 0 0 40px 0; }
+  margin: 0 0 40px 0;
+  padding: 0 0 0 0; }
 
 .text-color_black {
   color: #000; }
@@ -111,7 +119,7 @@ body {
   padding: 0 0 10px 0; }
 
 .btn {
-  margin: 80px 0 0 0;
+  margin: 50px 0 0 0;
   padding: 0 0 0 0;
   width: 100%;
   height: 50px;
@@ -141,6 +149,8 @@ body {
     border-bottom: 2px dashed #ffe002; }
 
 .text-last {
+  padding-bottom: 7px;
+  width: 90%;
   font-family: "Noto Serif", serif;
   font-style: normal;
   font-weight: 400;
@@ -150,9 +160,142 @@ body {
     padding: 0px; }
 
 .footnote {
-  margin: 70px 0 0 0;
+  margin: 50px 0 0 0;
   padding: 0 0 0 0;
   font-size: 0.7rem;
   font-family: "Noto Serif", serif;
   font-weight: 400;
   color: #adadad; }
+
+.wrapper {
+  display: flex;
+  flex-direction: column; }
+
+.text-title {
+  width: 200px; }
+
+@media only screen and (max-width: 800px) and (orientation: landscape) {
+  .author {
+    width: 280px; }
+
+  .container-inside {
+    width: 90%; }
+
+  .wrapper {
+    margin-top: 40px;
+    flex-direction: row;
+    align-items: flex-start; }
+
+  .wrapper-top {
+    width: 300px; }
+
+  .wrapper-bottom {
+    width: 50%; }
+
+  .author::before {
+    top: -7px;
+    left: 193px; }
+
+  .text-title {
+    width: 400px; }
+
+  .footnote {
+    margin: 40px 0 0 0; } }
+@media only screen and (min-width: 768px) and (max-width: 1280px) {
+  .quote {
+    font-size: 2rem; }
+
+  .laquo {
+    position: relative; }
+    .laquo::before {
+      content: '«';
+      position: absolute;
+      top: -2px;
+      left: -16px; }
+
+  .author {
+    width: 300px; }
+    .author::before {
+      top: -8px;
+      left: 192px;
+      font-size: 1.2rem; }
+
+  .text {
+    font-size: 1.7rem; }
+
+  .text-form {
+    font-size: 1.7rem; }
+
+  .text-input_marpad {
+    margin: 35px 0 0 0;
+    padding: 0 0 10px 0; }
+
+  .btn {
+    width: 400px;
+    height: 100px;
+    font-size: 2rem; }
+
+  .text-title {
+    width: 550px;
+    font-size: 2rem; }
+
+  .text-last {
+    font-size: 1.8rem; }
+
+  .footnote {
+    margin: 100px 0 0 0; } }
+@media only screen and (min-width: 1024px) and (max-width: 1365px) and (orientation: landscape) {
+  .container-inside {
+    width: 75%; }
+
+  .wrapper-top {
+    width: 65%; }
+
+  .footnote {
+    margin: 150px 0 0 0; } }
+@media only screen and (min-width: 1366px) {
+  .container-inside {
+    max-width: 1366px; }
+
+  .quote {
+    font-size: 3rem;
+    margin: 0 0 70px 0; }
+
+  .laquo {
+    position: relative; }
+    .laquo::before {
+      content: '«';
+      position: absolute;
+      top: -4px;
+      left: -25px; }
+
+  .author {
+    width: 300px; }
+    .author::before {
+      top: -6px;
+      left: 192px; }
+
+  .text {
+    font-size: 1.9rem; }
+
+  .text-form {
+    font-size: 1.7rem; }
+
+  .text-input_marpad {
+    margin: 35px 0 0 0;
+    padding: 0 0 10px 0; }
+
+  .btn {
+    width: 400px;
+    height: 100px;
+    font-size: 2rem; }
+
+  .text-title {
+    width: 550px;
+    font-size: 2rem; }
+
+  .text-last {
+    font-size: 1.8rem; }
+
+  .footnote {
+    margin: 150px 0 0 0; } }
